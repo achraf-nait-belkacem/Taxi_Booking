@@ -1,6 +1,6 @@
 package com.taxi.taxi_backend.entity;
 
-public enum statutbooking {
+public enum StatutBooking {
     EN_ATTENTE,
     CONFIRME,
     EN_COURS,
