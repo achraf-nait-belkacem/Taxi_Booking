@@ -1,7 +1,6 @@
-package com.taxi.taxi_backend.entity;
+package com.taxi.taxi._backend.entity;
 
 public enum Role {
     ADMIN,
-    CHAUFFEUR,
-    CLIENT
+    CHAUFFEUR
 }

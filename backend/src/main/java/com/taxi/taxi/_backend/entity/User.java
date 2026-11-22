@@ -1,4 +1,4 @@
-package com.taxi.taxi_backend.entity;
+package com.taxi.taxi._backend.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
