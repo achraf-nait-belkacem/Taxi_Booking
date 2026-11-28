@@ -1,7 +1,7 @@
-package com.taxi.taxi._backend.dto;
+package com.taxi.taxi_backend.dto;
 
-import com.taxi.taxi._backend.entity.Course;
-import com.taxi.taxi._backend.entity.StatutCourse;
+import com.taxi.taxi_backend.entity.Course;
+import com.taxi.taxi_backend.entity.StatutCourse;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

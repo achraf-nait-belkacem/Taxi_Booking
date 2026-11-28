@@ -1,4 +1,4 @@
-package com.taxi.taxi._backend.config;
+package com.taxi.taxi_backend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

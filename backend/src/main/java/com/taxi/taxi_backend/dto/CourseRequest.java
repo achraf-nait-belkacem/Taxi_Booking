@@ -1,4 +1,4 @@
-package com.taxi.taxi._backend.dto;
+package com.taxi.taxi_backend.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

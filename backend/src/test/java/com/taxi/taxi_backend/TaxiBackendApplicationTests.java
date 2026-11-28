@@ -1,4 +1,4 @@
-package com.taxi.taxi._backend;
+package com.taxi.taxi_backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

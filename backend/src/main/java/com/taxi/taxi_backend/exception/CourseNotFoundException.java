@@ -1,4 +1,4 @@
-package com.taxi.taxi._backend.exception;
+package com.taxi.taxi_backend.exception;
 
 public class CourseNotFoundException extends RuntimeException {
     public CourseNotFoundException(Long id) {

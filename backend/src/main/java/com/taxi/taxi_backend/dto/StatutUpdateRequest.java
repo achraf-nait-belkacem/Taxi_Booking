@@ -1,6 +1,6 @@
-package com.taxi.taxi._backend.dto;
+package com.taxi.taxi_backend.dto;
 
-import com.taxi.taxi._backend.entity.StatutCourse;
+import com.taxi.taxi_backend.entity.StatutCourse;
 import jakarta.validation.constraints.NotNull;
 
 public record StatutUpdateRequest(

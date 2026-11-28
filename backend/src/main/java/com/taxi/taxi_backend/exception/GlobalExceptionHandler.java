@@ -1,4 +1,4 @@
-package com.taxi.taxi._backend.exception;
+package com.taxi.taxi_backend.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

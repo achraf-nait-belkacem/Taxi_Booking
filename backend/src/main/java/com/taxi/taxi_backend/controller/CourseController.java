@@ -1,10 +1,10 @@
-package com.taxi.taxi._backend.controller;
+package com.taxi.taxi_backend.controller;
 
-import com.taxi.taxi._backend.dto.CourseRequest;
-import com.taxi.taxi._backend.dto.CourseResponse;
-import com.taxi.taxi._backend.dto.PrixUpdateRequest;
-import com.taxi.taxi._backend.dto.StatutUpdateRequest;
-import com.taxi.taxi._backend.service.CourseService;
+import com.taxi.taxi_backend.dto.CourseRequest;
+import com.taxi.taxi_backend.dto.CourseResponse;
+import com.taxi.taxi_backend.dto.PrixUpdateRequest;
+import com.taxi.taxi_backend.dto.StatutUpdateRequest;
+import com.taxi.taxi_backend.service.CourseService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

@@ -1,11 +1,11 @@
-package com.taxi.taxi._backend.service;
+package com.taxi.taxi_backend.service;
 
-import com.taxi.taxi._backend.dto.CourseRequest;
-import com.taxi.taxi._backend.dto.CourseResponse;
-import com.taxi.taxi._backend.entity.Course;
-import com.taxi.taxi._backend.entity.StatutCourse;
-import com.taxi.taxi._backend.exception.CourseNotFoundException;
-import com.taxi.taxi._backend.repository.CourseRepository;
+import com.taxi.taxi_backend.dto.CourseRequest;
+import com.taxi.taxi_backend.dto.CourseResponse;
+import com.taxi.taxi_backend.entity.Course;
+import com.taxi.taxi_backend.entity.StatutCourse;
+import com.taxi.taxi_backend.exception.CourseNotFoundException;
+import com.taxi.taxi_backend.repository.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
