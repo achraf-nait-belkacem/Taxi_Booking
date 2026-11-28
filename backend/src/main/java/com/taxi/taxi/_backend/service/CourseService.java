@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Service
@@ -23,7 +24,6 @@ public class CourseService {
                 .dateHeure(request.dateHeure())
                 .depart(request.depart())
                 .destination(request.destination())
-                .prix(request.prix())
                 .clientNom(request.clientNom())
                 .clientTelephone(request.clientTelephone())
                 .statut(StatutCourse.EN_ATTENTE)
@@ -50,6 +50,13 @@ public class CourseService {
     public CourseResponse changerStatut(Long id, StatutCourse nouveauStatut) {
         Course course = chargerOuEchouer(id);
         course.setStatut(nouveauStatut);
+        return CourseResponse.fromEntity(course);
+    }
+
+    @Transactional
+    public CourseResponse fixerPrix(Long id, BigDecimal prix) {
+        Course course = chargerOuEchouer(id);
+        course.setPrix(prix);
         return CourseResponse.fromEntity(course);
     }
 

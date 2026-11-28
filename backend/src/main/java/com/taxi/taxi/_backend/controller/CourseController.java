@@ -2,6 +2,7 @@ package com.taxi.taxi._backend.controller;
 
 import com.taxi.taxi._backend.dto.CourseRequest;
 import com.taxi.taxi._backend.dto.CourseResponse;
+import com.taxi.taxi._backend.dto.PrixUpdateRequest;
 import com.taxi.taxi._backend.dto.StatutUpdateRequest;
 import com.taxi.taxi._backend.service.CourseService;
 import jakarta.validation.Valid;
@@ -43,6 +44,12 @@ public class CourseController {
     public ResponseEntity<CourseResponse> changerStatut(@PathVariable Long id,
                                                         @Valid @RequestBody StatutUpdateRequest request) {
         return ResponseEntity.ok(courseService.changerStatut(id, request.statut()));
+    }
+
+    @PatchMapping("/{id}/prix")
+    public ResponseEntity<CourseResponse> fixerPrix(@PathVariable Long id,
+                                                    @Valid @RequestBody PrixUpdateRequest request) {
+        return ResponseEntity.ok(courseService.fixerPrix(id, request.prix()));
     }
 
     @DeleteMapping("/{id}")

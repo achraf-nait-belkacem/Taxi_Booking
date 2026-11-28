@@ -2,9 +2,7 @@ package com.taxi.taxi._backend.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.PositiveOrZero;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public record CourseRequest(
@@ -17,9 +15,6 @@ public record CourseRequest(
 
         @NotBlank(message = "La destination est obligatoire")
         String destination,
-
-        @PositiveOrZero(message = "Le prix ne peut pas être négatif")
-        BigDecimal prix,
 
         @NotBlank(message = "Le nom du client est obligatoire")
         String clientNom,
